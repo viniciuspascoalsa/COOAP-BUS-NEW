@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>História</title><style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-image: url(pampulhajpeg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        #container {
+            background-color: #f0f8ff;
+            width: 600px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-buttons {
+            display: flex;
+            gap: 6px;
+        }
+        
+        .tab-btn {
+            width: 100%;
+            border: none;
+            color: #020617;
+            background-color: #f0f8ff;
+            border-radius: 8px 8px 0px 0px;
+            font-weight: 500;
+            padding: 8px;
+            cursor: pointer;
+            transition: background-color .3s ease;
+        }
+        
+        .tab-btn.active {
+            background-color: #c7d2fe;
+        }
+        
+        .tab-btn:hover {
+            background-color: #a5b4fc;
+        }
+        
+        .content {
+            display: none;
+        }
+        
+        .content.show {
+            display: flex;
+            gap: 14px;
+            background-color: #c7d2fe;
+            border-radius: 0px 0px 8px 8px;
+            padding: 16px;
+        }
+        
+        .content-img {
+            width: 50%;
+            height: 250px;
+        }</style>
+    <script>
+        const tab = document.querySelectorAll('.tab-btn');
+    
+            tabs.forEach(tab => tab.addEventListener('click', () => tabClicked(tab)));
+            
+            const tabclicked = (tab) => {
+                tabs.forEach(tab => tab.classList.remove('active'));
+                tab.classList.add('active');
+            
+                const contents = document.querySelectorAll('.content');
+                contents.forEach(content => content.classList.remove('show'));
+            
+                const contentId = tab.getAttribute('content-id');
+                const content = document.getElementById(contentId);
+            
+                content.classList.add('show');
+            }
+            
+            const currentActiveTab = document.querySelector('.tab-btn.active');
+            tabClicked(currentActiveTab);
+            </script>
+            <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"><div style="text-align: center;">
+        <a href="index.html"><button id="btn" style="background-color: blue;">Voltar à página inicial</button></a><br><br>
+    </div>
+        <div class="tab-buttons">
+            <button class="tab-btn active" content-id="home">
+                Cbus+
+            </button>
+
+            <button class="tab-btn" content-id="services">
+                AlfaContábil
+            </button>
+
+            <button class="tab-btn" content-id="contacts">
+                Combustível+
+            </button>
+
+            <button class="tab-btn" content-id="location">
+                Mecânicos S/A
+            </button>
+
+            <button class="tab-btn" content-id="about">
+                Pineapple
+            </button>
+        </div>
+
+        <div class="tab-contents">
+            <div class="content show" id="home">
+                <img src="bus.png" class="content-img" alt="home image">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Cbus+
+                    </h1>
+
+                    <p class="content-description">
+                        Cbus+ foi criada em 2016 por Bryan Vinicius, com uma pequena frota de ônibus, com o pós pandemia foi complicado de reestabelecer, a ponto de não conseguir gerar capital suficiente, contudo Bryan teve de começar a fazer um curso no SENAI sobre programação, assim criando um sistema de gerênciamento de frota, no mesmo ano a CBUS+ se junta com outras empresas para a criação da COOAP BUS.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content" id="services">
+                <img src="alfa.png" class="content-img" alt="services image">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        AlfaContábil
+                    </h1>
+
+                    <p class="content-description">
+                        AlfaContábil foi criada em 2017 por Ana Carolina, Ana Beatriz e Júlia Paschoal, uma empresa focada na prestação de serviços de contabilidade, servindo a grandes nomes como a "Boa Noite Companhia", "Estrelinhas 1 dois e 2 três", porém com o objetivo de expandir seu mercado, uniu-se para a criação da COOAP BUS.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content" id="contacts">
+                <img src="combustível.png" class="content-img" alt="contacts image">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Combustível +
+                    </h1>
+
+                    <p class="content-description">
+                        Fundada em 2015 por Rafael Cleber, Combustível+ era um pequeno posto na rodovia BR 040.<br>Tendo em 2020 seu grande marco, a criação de 5 novos postos, dentre eles na Pampulha, Gutierrez, Alphavile, Nova Lima e Savassi.<br>Com a pândemia, e o lockdown, foi díficil para a Combustível+ gerar capital, porém em 2024 ela se junta com outras empresas para a criação da COOAP BUS.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content" id="location">
+                <img src="mecani.png" class="content-img" alt="location image">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Mecânicos S/A
+                    </h1>
+
+                    <p class="content-description">
+                        Fundada em 2019 por Carlos, Mecânicos S/A tinha o principal objetivo de efetuar manutenção em frotas de ônibus estaduais, com grandes investimentos iniciais. <br> Com o locdown causado pela COVID-19, grande parte de seus clientes cancelaram os contratos, assim a Mecânicos S/A enfrentou uma grande crise. <br> Com a volta à vida normal, Carlos percebeu que era um ótimo momento para poder investir, assim juntando com outras empresas para a criação da COOAP BUS.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content" id="about">
+                <img src="pineapple.png" class="content-img" alt="about image">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Pineapple
+                    </h1>
+
+                    <p class="content-description">
+                       Fundada por 5 membros em 2024, Bryan, Ryan, Gustavo, André e Rafael. Pineapple foi uma equipe de desenvolvimento de páginas web, criada na instituição de ensino: SENAI CTTI ( SENAI Centro de Treinamento de Tecnologia da Informação).<br> Porém com o fim do curso, Pineapple se desmembrou, assim Bryan decide criar um sistema de gerênciamento de ônibus para a Cbus+ ( Homenagem a linguagem de programação C++), no mesmo ano, se juntou com outras empresas para a criação da COOAP BUS.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const tabs = document.querySelectorAll('.tab-btn');
+
+        tabs.forEach(tab => tab.addEventListener('click', () => tabClicked(tab)));
+        
+        const tabClicked = (tab) => {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tab.classList.add('active');
+        
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('show'));
+        
+            const contentId = tab.getAttribute('content-id');
+            const content = document.getElementById(contentId);
+        
+            content.classList.add('show');
+        }
+        
+        const currentActivetab = document.querySelector('.tab-btn.active');
+        tabClicked(currentActiveTab);</script>
+</body>
+</html>

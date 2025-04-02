@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colaboradores</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(pampulhajpeg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #lo{
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        h4{
+            text-align: center;
+        }
+
+        input{
+            border-radius: 0px;
+        }
+    </style>
+    <script>
+        function co(){
+            alert("logando");
+        }
+    </script>
+</head>
+<body>
+    <div id="lo">
+        <nav class="nav">
+            <a href="login.html"><button id="btn" style="background-color: blue;">Voltar para a tela de escolhas</button></a>
+        </nav>
+        <form style="text-align: center;">
+        <h4>Login:</h4>
+            <input type="text" placeholder="login:">
+            <h4>Senha:</h4>
+            <input type="password" placeholder="Senha:">
+            <br><br>
+        </form>
+    <div style="text-align: center;">
+        <a href="trabalhador.html"><button id="btn" onclick="co()">Confirmar</button></a>
+    </div>
+    </div>
+</body>
+</html>

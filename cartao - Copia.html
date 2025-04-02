@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adquirir Cartão</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function add(){
+            alert("Processando dados");
+            alert("Seu pedido foi realizado com maestria!")
+        }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <a href="login.html"><button id="btn" style="background-color: blue;">Voltar para a tela de escolhas</button></a>
+    </nav><br>
+
+    <nav class="nav">
+        <h1>Adquirir Cartão COOAP BUS</h1>
+    </nav><br>
+    
+    <div id="cont">
+        <h4 style="text-align: center;">Seu cartão COOAP BUS para facilitar suas viagens:</h4>
+        <div style="text-align: center;">
+        <img src="cart1.jpeg" id="img" style="border-radius: 5000px;">
+        <img src="cart2.jpeg" id="img" style="border-radius: 5000px;">
+        </div>
+        <h4>Sobre o cartão COOAP BUS:</h4>
+        <p>O cartão COOAP BUS é um cartão usado na catraca do ônibus da COOAP BUS, ele possui braille para deficientes visuais e pode ser recarregado no próprio site da COOAP BUS, e é totalmente gratúito sua entrega.<br>
+            <b>O cartão COOAP BUS é entregue pelo correio em até 10 dias úteis.</b></p>
+    </div><br>
+
+    <form id="cont">
+        <h4>Preencha os campos a seguir para adquirir seu cartão COOAP BUS</h4>
+        <label for="cartao">Nome:</label><br>
+        <input type="text"><br>
+        <label for="cartao">Endereço:</label><br>
+        <input type="text"><br><br>
+        <a><button id="btn" onclick="add()">Confirmar</button></a>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(pampulhajpeg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input{
+    border-color: black;
+    border-radius: 10px;
+}
+
+
+
+#btns{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    height: 200px;
+    padding: 100px;
+}
+
+#btn{
+    background-color: seagreen;
+    color: white;
+    padding: 10px 20px;
+    margin: none;
+    border-radius: 15px;
+    border: none;
+    cursor:pointer;
+}
+
+.nav {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+
+    margin: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#img{
+    width: 150px;
+    
+}
+
+#map{
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#fim{
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+#cont{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+#mapd{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+#h2{
+    text-align: center;
+}
+
+#conta{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 15px;
+    text-align: center;
+    height: 270px;
+}
+
+#parc{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
